@@ -83,9 +83,167 @@ function App() {
       designation: "Technical Support (VMWare)",
     },
   ];
+
+  const mySchool = [
+    {
+      id: 1,
+      schoolName: "Sarada Sishu Tirtha",
+      duration: "1994 to 1996",
+    },
+    {
+      id: 2,
+      schoolName: "Sadar govt high school",
+      duration: "1996 to 2004",
+    },
+    {
+      id: 3,
+      schoolName: "Manindranath High School",
+      duration: "2005 to 2010",
+    },
+  ];
+
   return (
     <>
       <div className="main-container">
+        <div className="about">
+          <div className="name-div">
+            <h1>Abhishek kabi</h1>
+          </div>
+          <div className="details">
+            <p>DOB: 21/Dec/1991</p>
+            <p>Place of birth: Coochbehar, West Bengal</p>
+            <p>Age: 33</p>
+            <p>Current City: Bangalore, Karnataka</p>
+            <p>Relationship Status: Single</p>
+          </div>
+        </div>
+        {/* School Details Section */}
+        {mySchool.map((school) => (
+          <div className="job-container" key={school.id}>
+            <div className="job-container-details">
+              <div className="heading">
+                <div className="kont">
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "20px",
+                    }}
+                  >
+                    <p
+                      style={{
+                        color: "grey",
+                        fontSize: "20px",
+                        fontFamily: "Inter, sans-serif",
+                      }}
+                    >
+                      {school.id}.
+                    </p>{" "}
+                    <div className="img-comp-logo-div">
+                      <div
+                        style={{
+                          height: "100%",
+                          width: "100%",
+                          borderRadius: "50%",
+                          backgroundColor: "#f0f0f0",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <span style={{ color: "gray", fontSize: "12px" }}>
+                          School
+                        </span>
+                      </div>
+                    </div>{" "}
+                    <p className="compname">
+                      <strong>{school.schoolName}</strong>
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className="duration"
+                      style={{ color: "gray", margin: "0", padding: "0" }}
+                    >
+                      {school.duration}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+
+        {/* College Card */}
+        <div className="job-container">
+          <div className="job-container-details">
+            <div className="heading">
+              <div className="kont">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "20px",
+                  }}
+                >
+                  <p
+                    style={{
+                      color: "grey",
+                      fontSize: "20px",
+                      fontFamily: "Inter, sans-serif",
+                    }}
+                  >
+                    4.
+                  </p>{" "}
+                  <div className="img-comp-logo-div">
+                    <div
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                        borderRadius: "50%",
+                        backgroundColor: "#f0f0f0",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <img
+                        src="./vit.png"
+                        alt=""
+                        style={{
+                          height: "100%",
+                          width: "100%",
+                          borderRadius: "50%",
+                        }}
+                      />
+                    </div>
+                  </div>{" "}
+                  <p className="compname">
+                    <strong>Vellore Institute of technology</strong>
+                  </p>
+                </div>
+                <div>
+                  <p
+                    className="designation"
+                    style={{ color: "gray", margin: "0", padding: "0" }}
+                  >
+                    B.tech IT
+                  </p>
+                </div>
+                <div>
+                  <p
+                    className="duration"
+                    style={{ color: "gray", margin: "0", padding: "0" }}
+                  >
+                    2010 to 2017
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Job Details Section */}
         {jobDetails.map((details) => (
           <div className="job-container" key={details.id}>
             <div className="job-container-details">
@@ -105,7 +263,7 @@ function App() {
                         fontFamily: "Inter, sans-serif",
                       }}
                     >
-                      {details.id}.
+                      {details.id + 4}.
                     </p>{" "}
                     <div className="img-comp-logo-div">
                       <img
