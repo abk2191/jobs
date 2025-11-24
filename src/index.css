@@ -207,6 +207,15 @@ body {
   background-repeat: no-repeat;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .main-container {
