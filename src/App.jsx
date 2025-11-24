@@ -316,6 +316,9 @@ function App() {
           </div>
         ))}
       </div>
+        <div className="divider">
+          <h1>End of Phase-1</h1>
+        </div>
     </>
   );
 }
