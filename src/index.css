@@ -23,6 +23,7 @@
   font-family: "Inter", sans-serif;
   font-size: 18px;
   color: gray;
+  margin: 15px;
 }
 /*********************************/
 
@@ -106,6 +107,7 @@ body {
 .heading {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .kont {
