@@ -323,7 +323,7 @@ function App() {
         </div>
         <div className="divider">
           <h1 style={{paddingTop: "50px"}}>Beginning of Phase-2</h1>
-<p style={{fontSize: "14px"}}>The Restart</p>
+<p style={{fontSize: "14px", marginTop: "6px"}}>The Restart</p>
         </div>
     </>
   );
