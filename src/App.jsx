@@ -318,7 +318,8 @@ function App() {
       </div>
         <div className="divider">
           <h1>End of Phase-1</h1>
-          <p>Age: 33 | Bank Balance: 0 | Unemployed | Debt: ~38K</p>
+          <p style={{fontSize: "14px"}}>Age: 33 | Bank Balance: 0 | Unemployed |</p>
+          <p style={{fontSize: "14px"}}>Debt: ~38K</p>
         </div>
     </>
   );
