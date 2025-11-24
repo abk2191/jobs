@@ -88,7 +88,13 @@ function App() {
                       gap: "20px",
                     }}
                   >
-                    <p style={{ color: "grey", fontSize: "20px" }}>
+                    <p
+                      style={{
+                        color: "grey",
+                        fontSize: "20px",
+                        fontFamily: "Inter, sans-serif",
+                      }}
+                    >
                       {details.id}.
                     </p>{" "}
                     <div className="img-comp-logo-div">
