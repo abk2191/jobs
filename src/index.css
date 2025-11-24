@@ -67,6 +67,9 @@
   .job-container {
     width: 400px;
     padding: 10px;
+  }
+
+  .kont {
     flex-direction: column;
   }
 
