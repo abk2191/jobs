@@ -40,6 +40,12 @@
   border-radius: 10px;
   padding-left: 15px;
   box-shadow: 0 6px 16px rgba(105, 105, 105, 0.3);
+  transition: transform 0.3s ease;
+  transform-origin: center; /* Default, scales from center */
+}
+
+.job-container:active {
+  transform: scale(0.6);
 }
 
 .job-container-details {
