@@ -321,6 +321,9 @@ function App() {
           <p style={{fontSize: "14px", marginTop: "6px"}}>Age: 33 | Bank Balance: 0 | Unemployed |</p>
           <p style={{fontSize: "14px"}}>Debt: ~38K</p>
         </div>
+        <div className="divider">
+          <h1>Beginning of Phase-2</h1>
+        </div>
     </>
   );
 }
