@@ -8,6 +8,7 @@ function App() {
       duration: "Sept 2017 to Nov 2017",
       status: "Absconded",
       logo: "./aegis.png",
+      designation: "Customer Support (JIO)",
     },
     {
       id: 2,
@@ -15,6 +16,7 @@ function App() {
       duration: "Feb 2018 to Nov 2018",
       status: "Absconded",
       logo: "./dxc.png",
+      designation: "Tech Support L1 - Eon",
     },
     {
       id: 3,
@@ -22,6 +24,7 @@ function App() {
       duration: "Feb 2019 to Mar 2019",
       status: "Absconded",
       logo: "./hp.png",
+      designation: "Tech Support L1",
     },
     {
       id: 4,
@@ -29,6 +32,7 @@ function App() {
       duration: "Apr 2019 to Jun 2019",
       status: "Absconded",
       logo: "./quinnox.png",
+      designation: "Mainframe Engineer - RPG",
     },
     {
       id: 5,
@@ -36,6 +40,7 @@ function App() {
       duration: "Aug 2019 to Oct 2019",
       status: "Exit",
       logo: "./concentrix.webp",
+      designation: "Customer Support (OnePlus)",
     },
     {
       id: 6,
@@ -43,6 +48,7 @@ function App() {
       duration: "Jan 2020",
       status: "Terminated - Violent behaviour with HR/Recruiter",
       logo: "./amazon.jpg",
+      designation: "Seller Support",
     },
     {
       id: 7,
@@ -50,6 +56,7 @@ function App() {
       duration: "Oct 2020",
       status: "Absconded",
       logo: "./tp.svg",
+      designation: "Customer Support",
     },
     {
       id: 8,
@@ -57,6 +64,7 @@ function App() {
       duration: "April 2023",
       status: "Terminated - Violent behaviour with HR/Recruiter",
       logo: "./newera.png",
+      designation: "Technical Support L1 - (CISCO)",
     },
     {
       id: 9,
@@ -64,6 +72,7 @@ function App() {
       duration: "Jan 2025",
       status: "Absconded - #Hostile text msg to whatsapp group",
       logo: "./alorica.png",
+      designation: "Customer Support (Amazon)",
     },
     {
       id: 10,
@@ -71,6 +80,7 @@ function App() {
       duration: "Nov 2025",
       status: "Absconded - #Hostile text msg to trainer",
       logo: "./concentrix.webp",
+      designation: "Technical Support (VMWare)",
     },
   ];
   return (
@@ -110,6 +120,14 @@ function App() {
                     </div>{" "}
                     <p className="compname">
                       <strong>{details.compname}</strong>
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className="designation"
+                      style={{ color: "gray", margin: "0", padding: "0" }}
+                    >
+                      Designation: {details.designation}
                     </p>
                   </div>
                   <div>
