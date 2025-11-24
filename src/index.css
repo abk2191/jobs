@@ -65,8 +65,9 @@
 
 @media (max-width: 768px) {
   .job-container {
-    width: 450px;
+    width: 400px;
     padding: 10px;
+    flex-direction: column;
   }
 
   .job-container-details {
