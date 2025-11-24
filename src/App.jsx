@@ -127,7 +127,7 @@ function App() {
                       className="designation"
                       style={{ color: "gray", margin: "0", padding: "0" }}
                     >
-                      Designation: {details.designation}
+                      {details.designation}
                     </p>
                   </div>
                   <div>
