@@ -72,6 +72,9 @@
   .kont {
     display: flex;
     flex-direction: column;
+    width: 350px;
+    align-items: flex-start;
+    justify-content: left;
   }
 
   .job-container-details {

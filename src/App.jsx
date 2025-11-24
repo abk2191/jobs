@@ -81,7 +81,13 @@ function App() {
             <div className="job-container-details">
               <div className="heading">
                 <div className="kont">
-                  <div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "20px",
+                    }}
+                  >
                     <p style={{ color: "grey", fontSize: "20px" }}>
                       {details.id}.
                     </p>{" "}
@@ -100,15 +106,22 @@ function App() {
                       <strong>{details.compname}</strong>
                     </p>
                   </div>
-                  <p className="duration" style={{ color: "gray" }}>
-                    {details.duration}
-                  </p>
+                  <div>
+                    <p
+                      className="duration"
+                      style={{ color: "gray", margin: "0", padding: "0" }}
+                    >
+                      {details.duration}
+                    </p>
+                  </div>
                 </div>
               </div>
-              <p className="status">
-                <span style={{ color: "gray" }}>Status:</span>{" "}
-                <span style={{ color: "gray" }}>{details.status}</span>
-              </p>
+              <div>
+                <p className="status">
+                  <span style={{ color: "gray" }}>Status:</span>{" "}
+                  <span style={{ color: "gray" }}>{details.status}</span>
+                </p>
+              </div>
             </div>
           </div>
         ))}
