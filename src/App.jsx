@@ -106,6 +106,7 @@ function App() {
     <>
       <div className="main-container">
         <div className="about">
+          <div className="my-image-div"></div>
           <div className="name-div">
             <h1>Abhishek kabi</h1>
           </div>
