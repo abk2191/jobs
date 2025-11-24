@@ -118,6 +118,9 @@ function App() {
             <p>Relationship Status: Single</p>
           </div>
         </div>
+        <div className="divider">
+          <h1>Schools</h1>
+        </div>
         {/* School Details Section */}
         {mySchool.map((school) => (
           <div className="job-container" key={school.id}>
@@ -174,7 +177,9 @@ function App() {
             </div>
           </div>
         ))}
-
+        <div className="divider">
+          <h1>College</h1>
+        </div>
         {/* College Card */}
         <div className="job-container">
           <div className="job-container-details">
@@ -194,7 +199,7 @@ function App() {
                       fontFamily: "Inter, sans-serif",
                     }}
                   >
-                    4.
+                    1.
                   </p>{" "}
                   <div className="img-comp-logo-div">
                     <div
@@ -243,7 +248,9 @@ function App() {
             </div>
           </div>
         </div>
-
+        <div className="divider">
+          <h1>Work</h1>
+        </div>
         {/* Job Details Section */}
         {jobDetails.map((details) => (
           <div className="job-container" key={details.id}>
@@ -264,7 +271,7 @@ function App() {
                         fontFamily: "Inter, sans-serif",
                       }}
                     >
-                      {details.id + 4}.
+                      {details.id}.
                     </p>{" "}
                     <div className="img-comp-logo-div">
                       <img
