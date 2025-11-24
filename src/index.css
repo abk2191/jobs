@@ -199,7 +199,7 @@ body {
 .my-image-div {
   height: 100px;
   width: 100px;
-  border: 2px solid gray;
+  border: 3px solid black;
   border-radius: 50%;
   background-image: url("/abk.jpg");
   background-size: cover;
