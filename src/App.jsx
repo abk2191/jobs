@@ -81,23 +81,25 @@ function App() {
             <div className="job-container-details">
               <div className="heading">
                 <div className="kont">
-                  <p style={{ color: "grey", fontSize: "20px" }}>
-                    {details.id}.
-                  </p>{" "}
-                  <div className="img-comp-logo-div">
-                    <img
-                      src={details.logo}
-                      alt=""
-                      style={{
-                        height: "100%",
-                        width: "100%",
-                        borderRadius: "50%",
-                      }}
-                    />
-                  </div>{" "}
-                  <p className="compname">
-                    <strong>{details.compname}</strong>
-                  </p>
+                  <div>
+                    <p style={{ color: "grey", fontSize: "20px" }}>
+                      {details.id}.
+                    </p>{" "}
+                    <div className="img-comp-logo-div">
+                      <img
+                        src={details.logo}
+                        alt=""
+                        style={{
+                          height: "100%",
+                          width: "100%",
+                          borderRadius: "50%",
+                        }}
+                      />
+                    </div>{" "}
+                    <p className="compname">
+                      <strong>{details.compname}</strong>
+                    </p>
+                  </div>
                   <p className="duration" style={{ color: "gray" }}>
                     {details.duration}
                   </p>
