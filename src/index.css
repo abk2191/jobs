@@ -1,0 +1,75 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  gap: 50px;
+}
+
+.compname {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+}
+
+.duration {
+  font-family: "Inter", sans-serif;
+  font-size: 23px;
+}
+
+.status {
+  font-family: "Inter", sans-serif;
+  font-size: 23px;
+}
+
+.job-container {
+  border: 1px solid rgb(219, 218, 218);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(105, 105, 105, 0.3);
+}
+
+.job-container-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+  width: 600px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.kont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.img-comp-logo-div {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .job-container {
+    width: 450px;
+    padding: 10px;
+  }
+
+  .job-container-details {
+    width: 100%;
+  }
+}
