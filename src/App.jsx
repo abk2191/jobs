@@ -319,11 +319,11 @@ function App() {
         <div className="divider">
           <h1>End of Phase-1</h1>
           <p style={{fontSize: "14px", marginTop: "6px"}}>Age: 33 | Bank Balance: 0 | Unemployed |</p>
-          <p style={{fontSize: "14px"}}>Debt: ~38K</p>
+          <p style={{fontSize: "14px"}}>Debt: ~38K | Nov 2025</p>
         </div>
         <div className="divider">
           <h1 style={{paddingTop: "50px"}}>Beginning of Phase-2</h1>
-<p style={{fontSize: "14px", marginTop: "6px"}}>The Restart</p>
+<p style={{fontSize: "14px", marginTop: "6px", marginBottom: "30px"}}>The Restart | Dec 2025</p>
         </div>
     </>
   );
