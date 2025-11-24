@@ -322,7 +322,7 @@ function App() {
           <p style={{fontSize: "14px"}}>Debt: ~38K</p>
         </div>
         <div className="divider">
-          <h1 style={{marginTop: "30px"}}>Beginning of Phase-2</h1>
+          <h1 style={{paddingTop: "30px"}}>Beginning of Phase-2</h1>
         </div>
     </>
   );
