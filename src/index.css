@@ -1,14 +1,4 @@
-.main-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  padding: 50px;
-  gap: 50px;
-}
-
+/*********************************/
 .about {
   display: flex;
   flex-direction: column;
@@ -28,6 +18,38 @@
   font-family: "Inter", sans-serif;
   font-size: 18px;
   color: gray;
+}
+/*********************************/
+
+/* Add this at the top of your index.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Your existing CSS below */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  gap: 50px;
 }
 
 .compname {
@@ -62,7 +84,7 @@
   padding-left: 15px;
   box-shadow: 0 6px 16px rgba(105, 105, 105, 0.3);
   transition: transform 0.3s ease;
-  transform-origin: center; /* Default, scales from center */
+  transform-origin: center;
 }
 
 .job-container:active {
@@ -73,7 +95,6 @@
   display: flex;
   flex-direction: column;
   justify-content: left;
-
   width: 600px;
 }
 
@@ -97,20 +118,65 @@
 }
 
 @media (max-width: 768px) {
+  .main-container {
+    padding: 20px; /* Reduced padding for mobile */
+    gap: 30px; /* Reduced gap for mobile */
+  }
+
   .job-container {
-    width: 400px;
-    padding: 10px;
+    width: 100%; /* Use full width on mobile */
+    max-width: 400px; /* But limit maximum width */
+    padding: 15px;
   }
 
   .kont {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 100%;
     align-items: flex-start;
     justify-content: left;
+    gap: 10px; /* Reduced gap for mobile */
   }
 
   .job-container-details {
     width: 100%;
+  }
+
+  /* Adjust font sizes for mobile */
+  .compname {
+    font-size: 20px;
+  }
+
+  .duration,
+  .designation,
+  .status {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .job-container {
+    padding: 10px;
+  }
+
+  /* Further reduce font sizes for very small screens */
+  .compname {
+    font-size: 18px;
+  }
+
+  .duration,
+  .designation,
+  .status {
+    font-size: 16px;
+  }
+
+  .img-comp-logo-div {
+    height: 50px;
+    width: 50px;
   }
 }
