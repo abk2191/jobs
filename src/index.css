@@ -6,6 +6,7 @@
   justify-content: center;
   border: 1px solid rgb(154, 154, 154);
   padding: 15px;
+  gap: 25px;
 }
 
 .name-div h1 {
@@ -124,6 +125,12 @@ body {
   }
 
   .job-container {
+    width: 100%; /* Use full width on mobile */
+    max-width: 400px; /* But limit maximum width */
+    padding: 15px;
+  }
+
+  .about {
     width: 100%; /* Use full width on mobile */
     max-width: 400px; /* But limit maximum width */
     padding: 15px;
